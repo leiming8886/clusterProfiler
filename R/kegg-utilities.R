@@ -128,7 +128,7 @@ kegg_rest <- function(rest_url) {
 ## http://www.genome.jp/kegg/rest/keggapi.html
 ## kegg_link('hsa', 'pathway')
 kegg_link <- function(target_db, source_db) {
-    url <- paste0("http://rest.kegg.jp/link/", target_db, "/", source_db, collapse="")
+    url <- paste0("https://rest.kegg.jp/link/", target_db, "/", source_db, collapse="")
     kegg_rest(url)
 }
 
